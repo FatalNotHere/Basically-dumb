@@ -5,7 +5,6 @@ while True:
       youint=int(input("[1 for Stone, 0 for Paper, -1 for Scissor]\nEnter your choice:"))
       youstr=str(input("Enter any key to continue or\nEnter 'quit' to leave the game:"))
       youDict= {1:"Stone", 0:"Paper", -1: "Scissor"}
-      reverseDict= {"Stone":1, "Paper":0, "Scissor":-1}
       you=youint
 
       try:
@@ -14,7 +13,7 @@ while True:
         print("ERROR: Invalid input. Please enter a number or 'stop' to quit.")
         continue
       if youint not in youDict:
-        input("ERROR: Invalid choice.\nPlease enter 1, 0, or -1:")
+        input("ERROR: Invalid choice.\nPlease enter 1, 0, or -1\nEnter any key to continue:")
         continue       
       print(f"You Chose={youDict[you]}\nComputer Chose={youDict[computer]}")
     
